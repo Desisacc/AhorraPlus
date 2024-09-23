@@ -1,6 +1,7 @@
 import Groq from 'groq-sdk';
+import { GROQ_API_KEY } from 'secrets.js';
 
-const groq = new Groq({ apiKey: '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' });
+const groq = new Groq({ apiKey: GROQ_API_KEY });
 export async function getGroqChatCompletion(question) {
   return groq.chat.completions.create({
     messages: [
