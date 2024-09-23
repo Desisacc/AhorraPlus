@@ -1,5 +1,5 @@
 import Groq from 'groq-sdk';
-import { GROQ_API_KEY } from 'secrets.js';
+import { GROQ_API_KEY } from './secrets.js';
 
 const groq = new Groq({ apiKey: GROQ_API_KEY });
 export async function getGroqChatCompletion(question) {
